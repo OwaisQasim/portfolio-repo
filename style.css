@@ -1,0 +1,600 @@
+* html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+}
+
+ul li 
+{
+    display: inline-block;
+}
+
+header nav
+{
+    position: absolute;
+    right: 20px;
+}
+
+
+.resize {
+    width: 100px;
+    height: 100px;
+}
+
+header nav ul li a {
+    padding-right: 50px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: skyblue;
+}
+
+.slider .img1 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(..//Image/background1.jpg);
+    background-size: 100% 100%;
+}
+
+.slider ul li{
+    width: 100%;
+    height: 1000px;
+    color: white;
+    text-align: center;
+}
+
+.slider h2{
+    margin-top: 280px;
+    font-weight: bold;
+}
+
+.slider span{
+    color: orange;
+}
+
+.slider a {
+    padding: 10px 40px;
+    color: white;
+    margin-right: 15px;
+}
+
+.slider a:hover {
+    opacity: 0.6;
+}
+
+.slider a.btn-half {
+    background-color: rgb(59, 134, 160);
+}
+
+.slider a.btn-full {
+    background-color: rgb(102, 78, 33);
+}
+
+.slider .img2 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(..//Image/background2.jpg);
+    background-size: 100% 100%;
+}
+
+.img3 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(..//Image/background3.jpg);
+    background-size: 100% 100%;
+}
+
+.slider i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.secondary {
+    background-color: deepskyblue;
+    box-shadow: 0px 0px 37px 0px;
+    transition: all 0.5s ease-in;
+}
+
+.intro-area{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.sub-heading {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.sub-heading:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 10%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1%;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before {
+    width: 24%;
+    margin-left: -12px;
+}
+
+.sub-heading:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 10%;
+    height: 1px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p {
+    color: #818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block {
+    position: relative;
+    background: #e7dfdf;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+
+.intro-block:hover, .intro-block:active {
+    background: deepskyblue;
+}
+
+.intro-block:hover {
+    transition: 0.6s ease;
+}
+
+.intro-block .intro-icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    line-height: 2;
+    background-color: deepskyblue;
+    border-radius: 40%;
+    box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+.intro-block:hover .fa, .intro-block:active .fa {
+    background-color: white;
+    color: deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+    transition: 0.6s ease;
+}
+
+.intro-block h3 {
+    color: deepskyblue;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.intro-block p {
+    color: #474545;
+}
+
+.intro-block:hover h3, .intro-block:hover p {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.feature-area {
+    background-color: skyblue;
+}
+
+.feature-area .title h1, p, h3 {
+    color: white;
+}
+
+.feature-icon i {
+    color: white;
+}
+
+.single-feature {
+    position: relative;
+    width: 325px;
+    float: left;
+    text-align: center;
+    border-left: 1px solid rgb(180, 178, 178);
+    border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+.feature-block:after {
+    content: "";
+    display: table;
+}
+
+.feature-block:after {
+    clear: both;
+}
+
+.feature-block .feature-icon {
+    display: inline-block;
+    margin: 10px 0px 20px 0px;
+}
+
+.feature-area {
+    padding: 100px 0;
+    margin-top: -50px;
+}
+
+.single-feature .fa {
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: lightgray;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease;
+}
+
+.feature-area .feature-icon:hover i {
+    border:2px solid lightgray;
+    background-color: white;
+    color:gray;
+    transition: 0.3s ease-in;
+}
+
+.single-feature:nth-of-type(odd) {
+    border-left: none;
+}
+
+
+.single-feature:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.single-feature:last-child {
+    border-bottom: none;
+}
+
+.tittle::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 3px solid lightgray;
+}
+
+.more-features {
+    padding: 100px 0;
+    margin-top: -50px;
+}
+
+.more-features .feature-list ul {
+    list-style: none;
+}
+
+
+.feature-list li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 80px;
+}
+
+.feature-list .feature-details h3 {
+    color: deepskyblue;
+}
+
+.feature-list .feature-details p {
+    color: #616161;
+    font-weight: 200;
+}
+
+.feature-list .feature-icon i {
+    position: absolute;
+    left: 0;
+}
+
+.feature-list .feature-icon i {
+    width: 60px;
+    height: 60px;
+    color: deepskyblue;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid deepskyblue;
+    line-height: 60px;
+}
+
+.feature-list .feature-icon:hover i {
+    color: white;
+    background-color: #8CBED6;
+    transition: 0.5s ease;
+}
+
+.more-features .photo img {
+    margin-left: 70px;
+}
+
+.testimonial {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('..//Image/background4.jpg');
+    background-attachment: fixed;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: -100px;
+}
+
+.testimonial img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 3px solid darkgray;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.testimonial .carousel-indicators {
+    bottom: -50px;
+}
+
+.testimonial .some-heading p {
+    color: white;
+    position: relative;
+    padding: 0px 0px 20px;
+}
+
+.testimonial .carousel-indicators li.active {
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: deepskyblue;
+}
+
+.testimonial .carousel-indicators li {
+    border: black;
+}
+
+
+.team-area {
+    padding: 100px 0px;
+}
+
+.team-area .sub-heading {
+    margin-bottom: 100px;
+}
+
+.team-man {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    overflow: hidden;
+    min-height: 100px;
+    height: 100px;
+    min-width: 100px;
+    width: 100px;
+    border: 3px solid deepskyblue;
+    border-radius: 50%;
+}
+
+.team-man img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+.team-block h3 {
+    color: deepskyblue;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 70px;
+    margin-bottom: 5px;
+}
+
+.team-block span{
+    color: deepskyblue;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    bottom: 15px;
+}
+
+.team-block p{
+    color: rgb(109, 107, 107);
+    font-size: 15px;
+    padding: 25px 15px;
+    line-height: 24px;
+}
+
+.team-social-network {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.team-social-network a {
+    margin: 0 6px;
+}
+
+.team-social-network i {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    color: deepskyblue;
+    border-radius: 50%;
+    border: 3px solid deepskyblue;
+    padding-top: 8px;
+}
+
+.team-block {
+    text-align: center;
+    position: relative;
+    background-color: rgb(223, 219, 219);
+}
+
+.team-block:hover {
+    background-color: deepskyblue;
+    transition: 0.3s ease-in;
+}
+
+.team-block:hover .team-title h3,
+.team-block:hover .team-title span {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.team-block:hover .team-description p {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.team-block:hover .team-social-network i {
+    border-color: white;
+    color: white;
+    background-color: deepskyblue;
+    transition: 0.3s ease-in;
+}
+
+.download {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Image/background5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.download h2 {
+    color: white;
+}
+
+.download .sub-heading p{
+    color: white;
+}
+
+.download .default-btn {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    font-size: 20px;
+    padding: 8px 40px;
+    margin: 0 12px;
+}
+
+.download .default-btn:hover {
+    background-color: white;
+    color: deepskyblue;
+    transition: 0.3s ease-in;
+}
+
+
+.download .social-btn .fa {
+    margin-right: 12px;
+}
+
+.download {
+    padding: 120px 0;
+}
+
+
+.contact-area {
+    padding: 100px 0px;
+}
+
+.divider {
+    border-right: 2px solid lightgray;
+}
+
+.contact-area h3 {
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-area h4{
+    color: #3a3a3a;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.contact-area {
+    display: block;
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.025em;
+}
+
+.contact-area ul li {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.contact-area ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-address ul li .fa {
+    float: left;
+    width: 25px;
+    color: deepskyblue;
+    font-size: 30px;
+}
+
+.contact-address ul li .address-phone {
+    float: left;
+    width: 165px;
+    padding-left: 20px;
+}
+
+.contact_block {
+    padding-left: 20px;
+}
+
+.contact_block .form-control, .contact-area textarea{
+    font-family: 'Roboto', sans-serif;
+    background: #f8fdff;
+    border: 1px solid #a5d3eb;
+    padding: 10px 10px;
+    color: #bdbdbd;
+    height: 45px;
+    font-weight: 400;
+}
+
+.contact-area .form-group {
+    margin-bottom: 26px;
+}
+
+.contact-area textarea {
+    min-height: 115px;
+}
+
